@@ -96,9 +96,9 @@ class EmployeeManager:
         
          
         while True:                                                                # another validation for email
-            email = input("Enter Email: ")
-            if "@" not in email:
-                    print("Invalid email string.")
+            email = input("Enter Email: ").strip()
+            if "@" not in email or "." not in email.split("@")[-1]:
+                    print("Invalid email string. Example: user@example.com")
                     continue
             break
 
@@ -235,4 +235,5 @@ if __name__ == "__main__":
     manager = EmployeeManager()                                                 # creates an object of EmployeesManager class
 
     manager.run()                                                               # call run method
+
 
