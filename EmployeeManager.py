@@ -94,8 +94,8 @@ class EmployeeManager:
             except ValueError:
                 print("Invalid input. Please enter a number.")
         
-        email = input("Enter Email: ")                                             # another validation for email
-        while True:
+         
+        while True:                                                                # another validation for email
             email = input("Enter Email: ")
             if "@" not in email:
                     print("Invalid email string.")
@@ -235,3 +235,4 @@ if __name__ == "__main__":
     manager = EmployeeManager()                                                 # creates an object of EmployeesManager class
 
     manager.run()                                                               # call run method
+
