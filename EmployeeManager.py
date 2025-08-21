@@ -14,6 +14,7 @@
 # Moreover, two lib with different objectives; they are:
 # 11. csv
 # 12. os 
+# I put also validation on salary (numeric values) and email (must contain @ sign)
 ##=====================================================================================================================================================================
 
 
@@ -232,4 +233,5 @@ class EmployeeManager:
 
 if __name__ == "__main__":
     manager = EmployeeManager()                                                 # creates an object of EmployeesManager class
+
     manager.run()                                                               # call run method
